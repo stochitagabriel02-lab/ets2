@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h1 class="logo">Spotify</h1>
+      <nav>
+        <button class="nav-item active">Home</button>
+        <button class="nav-item">Search</button>
+        <button class="nav-item">Your Library</button>
+      </nav>
+      <section class="playlists">
+        <h2>Made for you</h2>
+        <ul>
+          <li>Daily Mix 1</li>
+          <li>Focus Flow</li>
+          <li>Chill Vibes</li>
+          <li>Top Hits</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="content">
+      <header>
+        <h2>Good Evening</h2>
+        <button id="themeToggle">Toggle Theme</button>
+      </header>
+
+      <section class="grid" id="albumGrid"></section>
+    </main>
+  </div>
+
+  <footer class="player">
+    <div class="now-playing">
+      <p class="song" id="songTitle">Select a track</p>
+      <p class="artist" id="songArtist">—</p>
+    </div>
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶</button>
+      <button id="next">⏭</button>
+    </div>
+    <input id="progress" type="range" value="0" min="0" max="100" />
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
